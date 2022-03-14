@@ -125,7 +125,7 @@ Returns:
 Example uses:
 
  * Add a class to the current slide to visually highlight it.
- * Send an analytics tracking event
+ * Send an analytics tracking event.
 
 
 ### slideClick
@@ -146,5 +146,22 @@ Example uses:
 
  * Set it as the current slide
 
+### visibilityChange
 
+Fires when a slide is scrolled into or out of view.
+
+Returns:
+
+```
+{
+  index: [int], // The slide number
+  el: [node], // The slide's node
+  visible: [boolean], // Whether the slide is fully scrolled into view
+}
+```
+
+Example uses:
+
+ * Automatically setting the visible slide to current in single-slide-per-page carousels.
+ * Send an analytics tracking event.
 
