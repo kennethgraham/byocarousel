@@ -26,7 +26,8 @@ An implementation-agnostic carousel library that causes no visible changes, but 
 }
 
 #foo > * {
-  display: block; 
+  display: block;
+  flex-shring: 0;
   width: 40%;
   aspect-ratio: 16/9;
 }
