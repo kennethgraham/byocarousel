@@ -1,3 +1,7 @@
+# Goal
+
+An implementation-agnostic carousel library that causes no visible changes, but provides events, methods, and accessibility improvments to make development of a carousel easier.
+
 # Setup
 
 ## Step 1: Create a carousel container with some slides in it.
