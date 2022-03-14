@@ -23,7 +23,7 @@
 
 #foo > * {
   display: block; 
-  width: 25%;
+  width: 40%;
   aspect-ratio: 16/9;
 }
 ```
