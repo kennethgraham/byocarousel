@@ -58,7 +58,7 @@ Maybe hook these up to your own previous and next buttons.  Or do it on a timer 
 ## Get the current slide number
 
 ```
-mySlide.slide
+mySlider.slide
 ```
 
 ## Scroll over a page
