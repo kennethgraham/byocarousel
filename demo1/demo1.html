@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="sliderDemo.css" />
+	</head>
+	<body>
+		<div class="slider">
+			<button class="slider__activator">Activate</button>
+			<hr />
+			<button class="slider__control slider__control_type_prev-page">Prev Page</button>
+			<button class="slider__control slider__control_type_prev">Prev</button>
+			<ul class="slider__list">
+				<li class="slider__item">
+					<span>Item 1</span>
+				</li>
+				<li class="slider__item">
+					<span>Item 2</span>
+				</li>
+				<li class="slider__item">
+					<span>Item 3 is a very long item but everything should still work</span>
+				</li>
+				<li class="slider__item">
+					<span>Item 4</span>
+				</li>
+				<li class="slider__item">
+					<span>Item 5 is kind of long</span>
+				</li>
+				<li class="slider__item">
+					<span>Item 6</span>
+				</li>
+				<li class="slider__item">
+					<span>Item 7</span>
+				</li>
+				<li class="slider__item">
+					<span>Item 8 is kind of long</span>
+				</li>
+				<li class="slider__item">
+					<span>Item 9</span>
+				</li>
+			</ul>
+			<button class="slider__control slider__control_type_next">Next</button>
+			<button class="slider__control slider__control_type_next-page">Next Page</button>
+		</div>
+		<hr />
+		<label>Current slide: <input id="current" value="" /></label>
+		<br /><br />
+		<label>Go to slide: <input id="gototextbox" value="" /> <button id="gotobutton">Go</button></label>
+		<script type="module" src="sliderDemo.js"></script>
+	</body>
+</html>

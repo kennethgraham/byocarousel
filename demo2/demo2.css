@@ -1,0 +1,173 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.slider {
+	position: relative;
+}
+
+.slider__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	background-color: #ccc;
+	overflow: auto;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+}
+
+.slider__list_active {
+	scrollbar-width: none;
+}
+
+.slider__list_active::-webkit-scrollbar {
+    height: 0;
+}
+
+.slider__item {
+	display: block;
+	width: 100%;
+	background-color: #666;
+	flex-shrink: 0;
+	list-style-type: none;
+	aspect-ratio: 16/9;
+	scroll-snap-align: center;
+}
+
+.slider__image {
+	display: block;
+	width: 100%;
+}
+
+.slider__control {
+	width: 2em;
+	height: 2em;
+	background-color: rgba(0,0,0,.6);
+	color: white;
+	position: absolute;
+	top: 50%;
+	margin-top: -1em;
+	border-radius: 50%;
+	border: 1px solid rgba(255,255,255,.6);
+	font-size: 2em;
+	cursor: pointer;
+	display: none;
+}
+
+.slider__control_active {
+	display: block;
+}
+
+.slider__control:hover {
+	background-color: rgba(0,0,0,.8);
+}
+
+.slider__control:focus {
+	background-color: rgba(0,0,0,1);
+}
+
+.slider__control_type_prev {
+	left: 0.5em;
+	right: auto;
+}
+
+.slider__control_type_next {
+	right: 0.5em;
+	left: auto;	
+}
+
+
+
+
+.thumbnails {
+	position: relative;
+}
+
+.thumbnails__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+.thumbnails__item {
+	display: block;
+	position: relative;
+	width: 25%;
+	background-color: #666;
+	flex-shrink: 0;
+	list-style-type: none;
+	aspect-ratio: 16/9;
+	border-width: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 0.7;
+	transition: .2s ease opacity;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.thumbnails__item:focus:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 4px solid blue;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.thumbnail__item:hover {
+	opacity: .8;
+}
+
+.thumbnails__item_current {
+	opacity: 1;
+}
+
+.thumbnails__image {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16/9;
+}
+
+.thumbnails__control {
+	width: 1.5em;
+	background-color: rgba(0,0,0,.6);
+	color: white;
+	position: absolute;
+	top: 30px;
+	bottom: 30px;
+	border-width: 0;
+	font-size: 1em;
+	cursor: pointer;
+	z-index: 1;
+	display: none;
+}
+
+.thumbnails__control_active {
+	display: block;
+}
+
+.thumbnails__control:hover {
+	background-color: rgba(0,0,0,.8);
+}
+
+.thumbnails__control:focus {
+	background-color: rgba(0,0,0,1);
+}
+
+.thumbnails__control_type_prev {
+	left: 0;
+	right: auto;
+}
+
+.thumbnails__control_type_next {
+	right: 0;
+	left: auto;	
+}
